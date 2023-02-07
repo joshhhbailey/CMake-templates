@@ -9,6 +9,9 @@
     - [Build Everything](#build-everything)
     - [ExampleProject / ExampleTests](#exampleproject--exampletests)
     - [ExampleLibrary](#examplelibrary)
+    - [ExampleSDL2](#examplesdl2)
+      - [Windows](#windows)
+      - [Mac/Linux](#maclinux)
   - [Package Instructions](#package-instructions)
 
 ## Overview
@@ -25,7 +28,6 @@ A collection of templates and anything CMake related, that I'll probably forget 
 Run Tests:<br/>
 \> ctest -C [Debug | Release]
 
-
 ### <u>ExampleProject / ExampleTests</u>
 \> mkdir build<br/>
 \> cd ./build<br/>
@@ -37,6 +39,16 @@ Run Tests:<br/>
 \> cd ./build<br/>
 \> cmake ..<br/>
 \> cmake --build . --target install
+
+### <u>ExampleSDL2</u>
+#### Windows
+\> mkdir build<br/>
+\> cd ./build<br/>
+\> cmake ..<br/>
+\> cmake --build . --config [Debug | Release]<br/>
+
+#### Mac/Linux
+Coming soon... (when I cba)
 
 ## Package Instructions
 See: https://github.com/JoshhhBailey/acc-man<br/>

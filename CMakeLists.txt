@@ -20,7 +20,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Enable testing for this directory and below
 enable_testing()
 
+# Add subdirectory this this build
 add_subdirectory(ExampleLibrary)
 add_subdirectory(ExampleProject)
 add_subdirectory(ExampleTests)
-
+add_subdirectory(ExampleSDL2)

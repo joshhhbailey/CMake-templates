@@ -10,7 +10,7 @@ set(TARGET_NAME ExampleTests)
 # Create executable (.exe)
 add_executable(${TARGET_NAME})
 
-# Declare source files (.cpp)
+# Declare source files (.cpp/.h)
 target_sources(${TARGET_NAME} PRIVATE
     main.cpp
 )

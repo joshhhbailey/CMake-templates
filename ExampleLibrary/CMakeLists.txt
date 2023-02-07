@@ -20,12 +20,15 @@ set(PUBLIC_HEADERS
     include/ExampleClass.h
 )
 
+# Distribute "PUBLIC_HEADERS" when installed
 set_target_properties(${TARGET_NAME} PROPERTIES PUBLIC_HEADER "${PUBLIC_HEADERS}")
+
+# Append "d" to library name, when Debug config selected
 set_target_properties(${TARGET_NAME} PROPERTIES DEBUG_POSTFIX "d")
 
 # Declare location of referenced header files (.h)
 target_include_directories(${TARGET_NAME} PRIVATE
-    ${CMAKE_PROJECT_DIR}/include
+    include
 )
 
 # Define installation path
